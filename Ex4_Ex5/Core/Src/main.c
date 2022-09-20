@@ -195,11 +195,11 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   int red_counter = 5, red_check_on=1;
-  int yellow_counter=2, yellow_check_on=0;
+  int yellow_counter=3, yellow_check_on=0;
   int green_counter=3, green_check_on=0;
 
   int red_counter2 = 5, red_check_on2=0;
-  int yellow_counter2=2, yellow_check_on2=0;
+  int yellow_counter2=3, yellow_check_on2=0;
   int green_counter2=3, green_check_on2=1;
 
   while (1)
@@ -214,7 +214,7 @@ int main(void)
 	  		  green_check_on=1;
 	  	  }else if(yellow_counter<=0 && yellow_check_on){
 	  		  yellow_check_on=0;
-	  		  yellow_counter=2;
+	  		  yellow_counter=3;
 	  		  red_check_on=1;
 	  		  green_check_on=0;
 	  	  }else if(green_counter<=0 && green_check_on){
@@ -232,7 +232,7 @@ int main(void)
 	  		  green_check_on2=1;
 	  	  }else if(yellow_counter2<=0 && yellow_check_on2){
 	  		  yellow_check_on2=0;
-	  		  yellow_counter2=2;
+	  		  yellow_counter2=3;
 	  		  red_check_on2=1;
 	  		  green_check_on2=0;
 	  	  }else if(green_counter2<=0 && green_check_on2){
@@ -282,7 +282,7 @@ int main(void)
 
 	  	  }
 	  	  //HAL_GPIO_WritePin(LED_GREEN_2_GPIO_Port, LED_GREEN_2_Pin, GPIO_PIN_RESET);
-	  	  HAL_Delay(1000);
+	  	  HAL_Delay(500);
 
     /* USER CODE BEGIN 3 */
   }
